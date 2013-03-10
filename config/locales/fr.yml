@@ -1,5 +1,6 @@
 ## YAML Template.
 ---
 fr:
-  hello_world: "Bonjour tous le monde"
-  hello_flash: "Bonjour tous les flashs"
+  hello_world: Bonjour tous le monde
+  hello_flash: Bonjour tous les flashs
+  help_title: Aide
