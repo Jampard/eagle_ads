@@ -5,6 +5,14 @@ class ApplicationController < ActionController::Base
   def set_locale
     I18n.locale = params[:locale] if params[:locale]
   end
+
+  include SessionsHelper
+
+  # Force signout to prevent CSRF attacks
+  def handle_unverified_request
+    sign_out
+    super
+  end
 #
 #  # Get locale from top-level domain or return nil if such locale is not available
 #  # You have to put something like:
